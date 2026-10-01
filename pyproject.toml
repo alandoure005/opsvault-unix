@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opsvault-unix"
+version = "0.1.0"
+description = "A Unix backup-and-restore toolkit that records SHA-256 manifests, detects corruption, and verifies restored content before making the destination visible."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+opsvault = "opsvault:main"
+
+[tool.setuptools]
+py-modules = ["opsvault"]
